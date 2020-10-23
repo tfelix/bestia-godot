@@ -20,14 +20,13 @@ jobs:
       - uses: actions/checkout@v2
         with:
           repository: godotengine/godot
-          ref: 3.2.3-stable
+          ref: 3.2
       # Clone Voxel Tools Plugin
       - uses: actions/checkout@v2
         with:
           repository: Zylann/godot_voxel
           path: modules/voxel
           ref: godot3.2.3
-
       # Clone our module under the correct directory
       - uses: actions/checkout@v2
         with:
